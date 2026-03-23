@@ -1,2 +1,2 @@
 # My-Portfolio
-My Portfolio site
+My Portfolio site is ready for release
