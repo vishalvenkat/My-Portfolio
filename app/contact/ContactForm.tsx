@@ -25,15 +25,16 @@ const LabelWithRequiredStar = ({
 const sendMessageServerAction = async (
   formData: FormData
 ) => {
-  const fullname = formData.get('fullname') as string;
-  const email = formData.get('email') as string;
-  const message = formData.get('message') as string;
+  console.log(formData);
+  // const fullname = formData.get('fullname') as string;
+  // const email = formData.get('email') as string;
+  // const message = formData.get('message') as string;
 
   const errors: any = {};
 
-  if (!fullname) errors.fullnameError = 'Name is required';
-  if (!email) errors.emailError = 'Email is required';
-  if (!message) errors.messageError = 'Message is required';
+  // if (!fullname) errors.fullnameError = 'Name is required';
+  // if (!email) errors.emailError = 'Email is required';
+  // if (!message) errors.messageError = 'Message is required';
 
   if (Object.keys(errors).length > 0) {
     return { ...errors, success: false };
